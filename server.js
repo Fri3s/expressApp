@@ -2,7 +2,6 @@
 import express from 'express';
 import cors from 'cors';
 import fetch from 'node-fetch';
-import path from 'path';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -25,3 +24,5 @@ app.get('/fetchWebsite', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+export default app;
